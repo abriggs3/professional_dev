@@ -23,6 +23,5 @@ public class GetPet extends HttpServlet {
         request.setAttribute("petSaysHi", petChoice.speak());
         RequestDispatcher dispatcher = request.getRequestDispatcher("/results.jsp");
         dispatcher.forward(request, response);
-
     }
 }
